@@ -1,0 +1,11 @@
+{
+  "name": "highfivefriday-boostrap",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "sass scss/style.scss css/style.css --style=compressed --no-source-map && sass scss/ck5style.scss css/ck5style.css --no-source-map",
+    "watch": "sass --watch scss/style.scss:css/style.css scss/ck5style.scss:css/ck5style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.54.0"
+  }
+}

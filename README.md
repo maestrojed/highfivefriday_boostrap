@@ -6,6 +6,17 @@
 
 ### CSS compilation.
 
-Prerequisites: install [sass](https://sass-lang.com/install).
+Prerequisites: Node.js installed on your machine.
 
-To compile, run from subtheme directory: `sass scss/style.scss css/style.css && sass scss/ck5style.scss css/ck5style.css`
+From the subtheme directory, install dependencies once:
+
+```bash
+npm install
+```
+
+Then:
+
+- `npm run build` — compile SCSS to CSS (run before committing)
+- `npm run watch` — recompile automatically while editing SCSS
+
+The build output is compressed/minified. To get readable CSS for debugging, remove `--style=compressed` from the `build` script in `package.json`.
