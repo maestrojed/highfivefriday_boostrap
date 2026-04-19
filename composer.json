@@ -1,0 +1,8 @@
+{
+  "name": "HighFiveFriday Boostrap",
+  "description": "HighFiveFriday theme built on Bootstrap",
+  "type": "drupal-theme",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/bootstrap5",
+  "minimum-stability": "dev",
+}
