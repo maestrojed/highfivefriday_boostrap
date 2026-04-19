@@ -1,0 +1,136 @@
+// Sub theme styling.
+@import 'variables_drupal';
+
+// Bootstrap overriden variables.
+// @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
+@import 'variables_bootstrap';
+
+// Include bootstrap.
+@import '../../../../themes/contrib/bootstrap5/scss/style-52';
+
+header {
+  background-image:url(/themes/custom/highfivefriday_boostrap/images/HighFiveFriday-Site-Background-Wide.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  padding: 30px 0;
+  margin-bottom:1em;
+
+  .btn-primary {
+    background-color: #fff;
+  }
+
+}
+
+h1,h2 {
+  color:$primary;
+}
+
+h2 {
+  font-size:1em;
+}
+
+main .navbar-nav {
+  //margin-bottom:20px;
+  //border-left-color:$primary;
+  //border-left-style:solid;
+  //padding-left:10px;
+  //margin-left:10px;
+  display: block;
+  position:relative;
+  top:-50px;
+  li {
+    font-size:1em;
+    //font-weight: bold;
+    font-family: Poppins;
+    display:inline;
+    a,a.nav-link,.nav-link {
+      display:inline;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.region-footer {
+  color:#ffffff;
+  .navbar-nav {
+    margin-bottom:20px;
+    li {
+      color:#ffffff;
+      a {
+        color:#ffffff;
+      }
+    }
+  }
+}
+.view-frontpage {
+  .node--view-mode-teaser{
+    padding-bottom:20px;
+  }
+}
+
+ul.slides {
+  padding-left: 0;
+
+  li {
+    list-style:none;
+  }
+
+}
+
+
+#search-form {
+  margin-bottom:10px;
+    div.form-type-search{
+      width:75%;
+    }
+}
+
+.region-content {
+  #search-form {
+    .btn, .button, button.link, .btn:hover, .button:hover, button.link:hover {
+      color: #ffffff;
+    }
+  }
+}
+.node--type-post {
+  font-size:1.3em;
+  .field--name-body{
+    margin-top:20px;
+  }
+}
+.field--name-field-tags {
+  margin-top:20px;
+  margin-bottom:20px;
+  div.field__item {
+    display:inline-block;
+    ::after{
+      content:","
+    }
+    padding-right:15px;
+  }
+  .field__label {
+    font-size:.6em;
+    font-family:Poppins;
+  }
+}
+.field--name-field-post-links {
+  margin-top:20px;
+  margin-bottom:20px;
+  .field__label {
+    font-size:.6em;
+    font-family:Poppins;
+  }
+}
+
+.path-taxonomy {
+  h1{
+    text-transform:capitalize;
+  }
+  .view-taxonomy-term {
+    .views-row {
+      margin:20px 0;
+    }
+  }
+}

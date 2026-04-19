@@ -1,0 +1,30 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+flexslider:
+  remote: http://flexslider.woothemes.com
+  license:
+    name: GNU-GPL-2.0-or-later
+    url: https://github.com/woothemes/FlexSlider/blob/master/LICENSE.md
+    gpl-compatible: true
+  js:
+    /libraries/flexslider/jquery.flexslider-min.js: { minified: true }
+hffflexslider:
+  js:
+    js/flexslider.js: {}
+  css:
+    theme:
+      css/flexslider.css: {}
+      /libraries/flexslider/demo/css/flexslider.css: {}
+  dependencies:
+      - core/jquery
+      - core/drupal
+      - core/once
+      - highfivefriday_bootstrap/flexslider
+highfivefriay_bootstrap_googlefonts:
+  css:
+    theme:
+      https://fonts.googleapis.com/css2?family=Poppins: {external: true}
+      https://fonts.googleapis.com/css2?family=Lato: {external: true}
+      https://fonts.googleapis.com/css2?family=Oswald: {external: true}
