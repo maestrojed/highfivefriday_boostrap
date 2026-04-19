@@ -1,8 +1,11 @@
 {
-  "name": "HighFiveFriday Boostrap",
-  "description": "HighFiveFriday theme built on Bootstrap",
-  "type": "drupal-theme",
-  "license": "GPL-2.0-or-later",
-  "homepage": "https://www.drupal.org/project/bootstrap5",
-  "minimum-stability": "dev",
+    "name": "linkwellhealthinc/quinoa",
+    "type": "drupal-custom-theme",
+    "description": "HighFiveFriday theme built on Bootstrap",
+    "homepage": "https://www.highfivefriday.com",
+    "license": "UNLICENSED",
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/core": "^9 || ^10"
+    }
 }
